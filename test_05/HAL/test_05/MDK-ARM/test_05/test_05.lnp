@@ -1,0 +1,28 @@
+--cpu Cortex-M7.fp.dp
+"test_05\startup_stm32f767xx.o"
+"test_05\delay.o"
+"test_05\main.o"
+"test_05\stm32f7xx_it.o"
+"test_05\stm32f7xx_hal_msp.o"
+"test_05\stm32f7xx_hal_cortex.o"
+"test_05\stm32f7xx_hal_iwdg.o"
+"test_05\stm32f7xx_hal_rcc.o"
+"test_05\stm32f7xx_hal_rcc_ex.o"
+"test_05\stm32f7xx_hal_flash.o"
+"test_05\stm32f7xx_hal_flash_ex.o"
+"test_05\stm32f7xx_hal_gpio.o"
+"test_05\stm32f7xx_hal_dma.o"
+"test_05\stm32f7xx_hal_dma_ex.o"
+"test_05\stm32f7xx_hal_pwr.o"
+"test_05\stm32f7xx_hal_pwr_ex.o"
+"test_05\stm32f7xx_hal.o"
+"test_05\stm32f7xx_hal_i2c.o"
+"test_05\stm32f7xx_hal_i2c_ex.o"
+"test_05\stm32f7xx_hal_exti.o"
+"test_05\stm32f7xx_hal_tim.o"
+"test_05\stm32f7xx_hal_tim_ex.o"
+"test_05\system_stm32f7xx.o"
+--strict --scatter "test_05\test_05.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "test_05.map" -o test_05\test_05.axf
