@@ -1,0 +1,15 @@
+..\obj\exti.o: ..\HARDWARE\EXTI\exti.c
+..\obj\exti.o: ..\HARDWARE\EXTI\exti.h
+..\obj\exti.o: ..\SYSTEM\sys\sys.h
+..\obj\exti.o: ..\SYSTEM\sys\stm32f7xx.h
+..\obj\exti.o: ..\SYSTEM\sys\stm32f767xx.h
+..\obj\exti.o: ..\SYSTEM\sys\core_cm7.h
+..\obj\exti.o: D:\Software\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\exti.o: ..\SYSTEM\sys\core_cmInstr.h
+..\obj\exti.o: ..\SYSTEM\sys\cmsis_armcc.h
+..\obj\exti.o: ..\SYSTEM\sys\core_cmFunc.h
+..\obj\exti.o: ..\SYSTEM\sys\core_cmSimd.h
+..\obj\exti.o: ..\SYSTEM\sys\system_stm32f7xx.h
+..\obj\exti.o: ..\SYSTEM\delay\delay.h
+..\obj\exti.o: ..\HARDWARE\LED\led.h
+..\obj\exti.o: ..\HARDWARE\KEY\key.h
