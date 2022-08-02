@@ -5,6 +5,7 @@
 "test_13\dma2d.o"
 "test_13\fmc.o"
 "test_13\ltdc.o"
+"test_13\usart.o"
 "test_13\stm32f7xx_it.o"
 "test_13\stm32f7xx_hal_msp.o"
 "test_13\lcd.o"
@@ -30,6 +31,8 @@
 "test_13\stm32f7xx_hal_dsi.o"
 "test_13\stm32f7xx_hal_tim.o"
 "test_13\stm32f7xx_hal_tim_ex.o"
+"test_13\stm32f7xx_hal_uart.o"
+"test_13\stm32f7xx_hal_uart_ex.o"
 "test_13\system_stm32f7xx.o"
 --strict --scatter "test_13\test_13.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols

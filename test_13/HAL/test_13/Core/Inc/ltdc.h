@@ -35,7 +35,6 @@ extern "C" {
 extern LTDC_HandleTypeDef hltdc;
 
 /* USER CODE BEGIN Private defines */
-void MX_LTDC_Init(void);
 
 /* USER CODE END Private defines */
 

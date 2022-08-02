@@ -20,11 +20,13 @@
 #include "main.h"
 #include "dma2d.h"
 #include "ltdc.h"
+#include "usart.h"
 #include "gpio.h"
 #include "fmc.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "stdio.h"
 #include "lcd.h"
 /* USER CODE END Includes */
 
@@ -57,6 +59,39 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 void LTDC_Test(void);
+
+//加入以下代码,支持printf函数,而不需要选择use MicroLIB	  
+#if 1
+#pragma import(__use_no_semihosting)  
+//解决HAL库使用时,某些情况可能报错的bug
+int _ttywrch(int ch)    
+{
+    ch=ch;
+	return ch;
+}
+//标准库需要的支持函数                 
+struct __FILE 
+{ 
+	int handle; 
+	/* Whatever you require here. If the only file you are using is */ 
+	/* standard output using printf() for debugging, no file handling */ 
+	/* is required. */ 
+}; 
+/* FILE is typedef’ d in stdio.h. */ 
+FILE __stdout;       
+//定义_sys_exit()以避免使用半主机模式    
+void _sys_exit(int x) 
+{ 
+	x = x; 
+} 
+//重定义fputc函数 
+int fputc(int ch, FILE *f)
+{      
+	while((USART1->ISR&0X40)==0);//循环发送,直到发送完毕   
+	USART1->TDR = (uint8_t) ch;      
+	return ch;
+}
+#endif
 /* USER CODE END 0 */
 
 /**
@@ -90,11 +125,13 @@ int main(void)
   MX_DMA2D_Init();
   MX_FMC_Init();
   MX_LTDC_Init();
+  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 	MX_FMC_Init();
 	SDRAM_Initialization_Sequence(&hsdram1);//发送SDRAM初始化序列
 	MX_LTDC_Init();
 	LCD_Init();
+	printf("初始化完毕");
   /* USER CODE END 2 */
 
   /* Infinite loop */

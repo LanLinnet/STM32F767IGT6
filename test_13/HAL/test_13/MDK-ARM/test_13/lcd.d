@@ -35,6 +35,8 @@ test_13\lcd.o: ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_ltdc.h
 test_13\lcd.o: ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_ltdc_ex.h
 test_13\lcd.o: ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr.h
 test_13\lcd.o: ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr_ex.h
+test_13\lcd.o: ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h
+test_13\lcd.o: ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h
 test_13\lcd.o: D:\Software\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 test_13\lcd.o: ..\LCD\font.h
 test_13\lcd.o: ../Core/Inc/ltdc.h

@@ -10,7 +10,6 @@
       <TargetName>test_13</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060061::V5.06 update 1 (build 61)::ARMCC</pCCUsed>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32F767IGTx</Device>
@@ -411,6 +410,11 @@
               <FilePath>../Core/Src/ltdc.c</FilePath>
             </File>
             <File>
+              <FileName>usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Core/Src/usart.c</FilePath>
+            </File>
+            <File>
               <FileName>stm32f7xx_it.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/stm32f7xx_it.c</FilePath>
@@ -539,6 +543,16 @@
               <FileName>stm32f7xx_hal_tim_ex.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f7xx_hal_uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f7xx_hal_uart_ex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.c</FilePath>
             </File>
           </Files>
         </Group>

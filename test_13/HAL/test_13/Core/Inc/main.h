@@ -36,7 +36,6 @@ extern "C" {
 
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
-//LCD LTDC重要参数集
 typedef struct  
 {							 
 	uint32_t pwidth;			//LCD面板的宽度,固定参数,不随显示方向改变,如果为0,说明没有任何RGB屏接入
@@ -60,7 +59,7 @@ typedef __IO uint8_t  vuint8_t;
 
 typedef __I uint32_t vuc32;  
 typedef __I uint16_t vuc16; 
-typedef __I uint8_t vuc8;  
+typedef __I uint8_t vuc8; 
 /* USER CODE END ET */
 
 /* Exported constants --------------------------------------------------------*/
@@ -119,7 +118,6 @@ void Error_Handler(void);
 #define SDRAM_MODEREG_OPERATING_MODE_STANDARD    ((uint16_t)0x0000)
 #define SDRAM_MODEREG_WRITEBURST_MODE_PROGRAMMED ((uint16_t)0x0000)
 #define SDRAM_MODEREG_WRITEBURST_MODE_SINGLE     ((uint16_t)0x0200)
-
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus
