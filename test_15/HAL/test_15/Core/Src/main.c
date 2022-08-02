@@ -119,20 +119,19 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_DMA2D_Init();
-  MX_FMC_Init();
-  MX_LTDC_Init();
-  MX_RTC_Init();
-  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
   	MX_FMC_Init();
 	SDRAM_Initialization_Sequence(&hsdram1);//发送SDRAM初始化序列
 	MX_LTDC_Init();
+	MX_RTC_Init();
+	RTC_Set_WakeUp(RTC_WAKEUPCLOCK_CK_SPRE_16BITS,0); //配置WAKE UP中断,1秒钟中断一次 
+    MX_USART1_UART_Init();
 	LCD_Init();
 	POINT_COLOR=RED;	  
 	LCD_ShowString(30,50,200,16,16,(uint8_t *)"Apollo STM32F4/F7");	
 	LCD_ShowString(30,70,200,16,16,(uint8_t *)"RTC TEST");	
 	LCD_ShowString(30,90,200,16,16,(uint8_t *)"ATOM@ALIENTEK");
-	LCD_ShowString(30,110,200,16,16,(uint8_t *)"2022/8/1");
+	LCD_ShowString(30,110,200,16,16,(uint8_t *)"2022/8/2");
   /* USER CODE END 2 */
 
   /* Infinite loop */

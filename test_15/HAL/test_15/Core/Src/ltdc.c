@@ -120,9 +120,9 @@ void HAL_LTDC_MspInit(LTDC_HandleTypeDef* ltdcHandle)
   /** Initializes the peripherals clock
   */
     PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_LTDC;
-    PeriphClkInitStruct.PLLSAI.PLLSAIN = 396;
+    PeriphClkInitStruct.PLLSAI.PLLSAIN = 360;
     PeriphClkInitStruct.PLLSAI.PLLSAIR = 3;
-    PeriphClkInitStruct.PLLSAI.PLLSAIQ = 2;
+    PeriphClkInitStruct.PLLSAI.PLLSAIQ = 4;
     PeriphClkInitStruct.PLLSAI.PLLSAIP = RCC_PLLSAIP_DIV2;
     PeriphClkInitStruct.PLLSAIDivQ = 1;
     PeriphClkInitStruct.PLLSAIDivR = RCC_PLLSAIDIVR_4;

@@ -247,12 +247,12 @@ void RTC_Alarm_IRQHandler(void)
 void HAL_RTC_AlarmAEventCallback(RTC_HandleTypeDef *hrtc)
 {
     printf("ALARM A!\r\n");
-	LCD_ShowString(30,200,210,16,16,(uint8_t *)"ALARM A!");
+	//LCD_ShowString(30,200,210,16,16,(uint8_t *)"ALARM A!");
 }
 
 //RTC WAKE UP÷–∂œ¥¶¿Ì
 void HAL_RTCEx_WakeUpTimerEventCallback(RTC_HandleTypeDef *hrtc)
 {
-    HAL_GPIO_TogglePin(GPIOB,GPIO_PIN_0);
+    HAL_GPIO_TogglePin(LED1_GPIO_Port,LED1_Pin);
 }
 /* USER CODE END 1 */

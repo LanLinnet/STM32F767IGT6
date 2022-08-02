@@ -73,7 +73,7 @@ void MX_RTC_Init(void)
   }
   sDate.WeekDay = RTC_WEEKDAY_SUNDAY;
   sDate.Month = RTC_MONTH_DECEMBER;
-  sDate.Date = 0x27;
+  sDate.Date = 0x29;
   sDate.Year = 0x15;
   if (HAL_RTC_SetDate(&hrtc, &sDate, RTC_FORMAT_BCD) != HAL_OK)
   {
@@ -105,7 +105,7 @@ void MX_RTC_Init(void)
     Error_Handler();
   }
   /* USER CODE BEGIN RTC_Init 2 */
-
+  
   /* USER CODE END RTC_Init 2 */
 
 }
@@ -138,7 +138,6 @@ void HAL_RTC_MspInit(RTC_HandleTypeDef* rtcHandle)
     HAL_NVIC_SetPriority(RTC_Alarm_IRQn, 1, 2);
     HAL_NVIC_EnableIRQ(RTC_Alarm_IRQn);
   /* USER CODE BEGIN RTC_MspInit 1 */
-
   /* USER CODE END RTC_MspInit 1 */
   }
 }
@@ -164,5 +163,23 @@ void HAL_RTC_MspDeInit(RTC_HandleTypeDef* rtcHandle)
 }
 
 /* USER CODE BEGIN 1 */
+//周期性唤醒定时器设置  
+/*wksel:  @ref RTCEx_Wakeup_Timer_Definitions
+#define RTC_WAKEUPCLOCK_RTCCLK_DIV16        ((uint32_t)0x00000000)
+#define RTC_WAKEUPCLOCK_RTCCLK_DIV8         ((uint32_t)0x00000001)
+#define RTC_WAKEUPCLOCK_RTCCLK_DIV4         ((uint32_t)0x00000002)
+#define RTC_WAKEUPCLOCK_RTCCLK_DIV2         ((uint32_t)0x00000003)
+#define RTC_WAKEUPCLOCK_CK_SPRE_16BITS      ((uint32_t)0x00000004)
+#define RTC_WAKEUPCLOCK_CK_SPRE_17BITS      ((uint32_t)0x00000006)
+*/
+//cnt:自动重装载值.减到0,产生中断.
+void RTC_Set_WakeUp(uint32_t wksel,uint16_t cnt)
+{ 
+    __HAL_RTC_WAKEUPTIMER_CLEAR_FLAG(&hrtc, RTC_FLAG_WUTF);//清除RTC WAKE UP的标志
+	
+	HAL_RTCEx_SetWakeUpTimer_IT(&hrtc,cnt,wksel);            //设置重装载值和时钟 
 
+	HAL_NVIC_SetPriority(RTC_WKUP_IRQn,0x02,0x02); //抢占优先级1,子优先级2
+    HAL_NVIC_EnableIRQ(RTC_WKUP_IRQn);
+}
 /* USER CODE END 1 */
