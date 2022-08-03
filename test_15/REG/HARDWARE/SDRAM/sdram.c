@@ -157,7 +157,7 @@ void SDRAM_RGBLCD_Set(void)
 {
 	u32 mregval = 0;
 	FMC_Bank5_6->SDCR[0]&=~(3<<7);		//清除原来的CAS延迟设置
-	FMC_Bank5_6->SDCR[0]&= 2<<7;		//设置CAS延迟为2
+	FMC_Bank5_6->SDCR[0]|= 2<<7;		//设置CAS延迟为2
 	
 	mregval|=3<<0;					//设置突发长度:8(可以是1/2/4/8)
 	mregval|=0<<3;					//设置突发类型:连续(可以是连续/交错)
