@@ -24,6 +24,92 @@ Section Cross References
     startup_stm32f767xx.o(.text) refers to __main.o(!!!main) for __main
     startup_stm32f767xx.o(.text) refers to startup_stm32f767xx.o(HEAP) for Heap_Mem
     startup_stm32f767xx.o(.text) refers to startup_stm32f767xx.o(STACK) for Stack_Mem
+    lcd.o(i.LCD_Clear) refers to ltdc.o(i.LTDC_Clear) for LTDC_Clear
+    lcd.o(i.LCD_Clear) refers to lcd.o(i.LCD_SetCursor) for LCD_SetCursor
+    lcd.o(i.LCD_Clear) refers to lcd.o(i.LCD_WriteRAM_Prepare) for LCD_WriteRAM_Prepare
+    lcd.o(i.LCD_Clear) refers to lcd.o(.bss) for .bss
+    lcd.o(i.LCD_Clear) refers to ltdc.o(.bss) for lcdltdc
+    lcd.o(i.LCD_Color_Fill) refers to ltdc.o(i.LTDC_Color_Fill) for LTDC_Color_Fill
+    lcd.o(i.LCD_Color_Fill) refers to lcd.o(i.LCD_SetCursor) for LCD_SetCursor
+    lcd.o(i.LCD_Color_Fill) refers to lcd.o(i.LCD_WriteRAM_Prepare) for LCD_WriteRAM_Prepare
+    lcd.o(i.LCD_Color_Fill) refers to ltdc.o(.bss) for lcdltdc
+    lcd.o(i.LCD_DisplayOff) refers to ltdc.o(i.LTDC_Switch) for LTDC_Switch
+    lcd.o(i.LCD_DisplayOff) refers to lcd.o(i.LCD_WR_REG) for LCD_WR_REG
+    lcd.o(i.LCD_DisplayOff) refers to ltdc.o(.bss) for lcdltdc
+    lcd.o(i.LCD_DisplayOff) refers to lcd.o(.bss) for .bss
+    lcd.o(i.LCD_DisplayOn) refers to ltdc.o(i.LTDC_Switch) for LTDC_Switch
+    lcd.o(i.LCD_DisplayOn) refers to lcd.o(i.LCD_WR_REG) for LCD_WR_REG
+    lcd.o(i.LCD_DisplayOn) refers to ltdc.o(.bss) for lcdltdc
+    lcd.o(i.LCD_DisplayOn) refers to lcd.o(.bss) for .bss
+    lcd.o(i.LCD_Display_Dir) refers to ltdc.o(i.LTDC_Display_Dir) for LTDC_Display_Dir
+    lcd.o(i.LCD_Display_Dir) refers to lcd.o(i.LCD_Scan_Dir) for LCD_Scan_Dir
+    lcd.o(i.LCD_Display_Dir) refers to lcd.o(.bss) for .bss
+    lcd.o(i.LCD_Display_Dir) refers to ltdc.o(.bss) for lcdltdc
+    lcd.o(i.LCD_DrawLine) refers to lcd.o(i.LCD_DrawPoint) for LCD_DrawPoint
+    lcd.o(i.LCD_DrawPoint) refers to ltdc.o(i.LTDC_Draw_Point) for LTDC_Draw_Point
+    lcd.o(i.LCD_DrawPoint) refers to lcd.o(i.LCD_SetCursor) for LCD_SetCursor
+    lcd.o(i.LCD_DrawPoint) refers to lcd.o(i.LCD_WriteRAM_Prepare) for LCD_WriteRAM_Prepare
+    lcd.o(i.LCD_DrawPoint) refers to ltdc.o(.bss) for lcdltdc
+    lcd.o(i.LCD_DrawPoint) refers to lcd.o(.data) for .data
+    lcd.o(i.LCD_DrawRectangle) refers to lcd.o(i.LCD_DrawLine) for LCD_DrawLine
+    lcd.o(i.LCD_Draw_Circle) refers to lcd.o(i.LCD_DrawPoint) for LCD_DrawPoint
+    lcd.o(i.LCD_Fast_DrawPoint) refers to ltdc.o(i.LTDC_Draw_Point) for LTDC_Draw_Point
+    lcd.o(i.LCD_Fast_DrawPoint) refers to lcd.o(i.LCD_WR_REG) for LCD_WR_REG
+    lcd.o(i.LCD_Fast_DrawPoint) refers to lcd.o(i.LCD_WR_DATA) for LCD_WR_DATA
+    lcd.o(i.LCD_Fast_DrawPoint) refers to ltdc.o(.bss) for lcdltdc
+    lcd.o(i.LCD_Fast_DrawPoint) refers to lcd.o(.bss) for .bss
+    lcd.o(i.LCD_Fill) refers to ltdc.o(i.LTDC_Fill) for LTDC_Fill
+    lcd.o(i.LCD_Fill) refers to lcd.o(i.LCD_SetCursor) for LCD_SetCursor
+    lcd.o(i.LCD_Fill) refers to lcd.o(i.LCD_WriteRAM_Prepare) for LCD_WriteRAM_Prepare
+    lcd.o(i.LCD_Fill) refers to ltdc.o(.bss) for lcdltdc
+    lcd.o(i.LCD_Init) refers to stm32f7xx_hal_ltdc.o(i.HAL_LTDC_Init) for HAL_LTDC_Init
+    lcd.o(i.LCD_Init) refers to lcd.o(i.LTDC_Layer_Parameter_Config) for LTDC_Layer_Parameter_Config
+    lcd.o(i.LCD_Init) refers to stm32f7xx_hal_ltdc.o(i.HAL_LTDC_SetWindowPosition) for HAL_LTDC_SetWindowPosition
+    lcd.o(i.LCD_Init) refers to stm32f7xx_hal_ltdc.o(i.HAL_LTDC_SetWindowSize) for HAL_LTDC_SetWindowSize
+    lcd.o(i.LCD_Init) refers to lcd.o(i.LCD_Display_Dir) for LCD_Display_Dir
+    lcd.o(i.LCD_Init) refers to ltdc.o(i.LTDC_Select_Layer) for LTDC_Select_Layer
+    lcd.o(i.LCD_Init) refers to stm32f7xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
+    lcd.o(i.LCD_Init) refers to lcd.o(i.LCD_Clear) for LCD_Clear
+    lcd.o(i.LCD_Init) refers to ltdc.o(.bss) for lcdltdc
+    lcd.o(i.LCD_Init) refers to lcd.o(.bss) for .bss
+    lcd.o(i.LCD_Init) refers to ltdc.o(.data) for ltdc_framebuf
+    lcd.o(i.LCD_Init) refers to lcd.o(.ARM.__AT_0xC0000000) for .ARM.__AT_0xC0000000
+    lcd.o(i.LCD_MPU_Config) refers to stm32f7xx_hal_cortex.o(i.HAL_MPU_Disable) for HAL_MPU_Disable
+    lcd.o(i.LCD_MPU_Config) refers to stm32f7xx_hal_cortex.o(i.HAL_MPU_ConfigRegion) for HAL_MPU_ConfigRegion
+    lcd.o(i.LCD_MPU_Config) refers to stm32f7xx_hal_cortex.o(i.HAL_MPU_Enable) for HAL_MPU_Enable
+    lcd.o(i.LCD_ReadPoint) refers to ltdc.o(i.LTDC_Read_Point) for LTDC_Read_Point
+    lcd.o(i.LCD_ReadPoint) refers to lcd.o(i.LCD_SetCursor) for LCD_SetCursor
+    lcd.o(i.LCD_ReadPoint) refers to lcd.o(i.LCD_WR_REG) for LCD_WR_REG
+    lcd.o(i.LCD_ReadPoint) refers to lcd.o(i.LCD_RD_DATA) for LCD_RD_DATA
+    lcd.o(i.LCD_ReadPoint) refers to lcd.o(.bss) for .bss
+    lcd.o(i.LCD_ReadPoint) refers to ltdc.o(.bss) for lcdltdc
+    lcd.o(i.LCD_ReadReg) refers to lcd.o(i.LCD_WR_REG) for LCD_WR_REG
+    lcd.o(i.LCD_ReadReg) refers to stm32f7xx_hal.o(i.HAL_Delay) for HAL_Delay
+    lcd.o(i.LCD_ReadReg) refers to lcd.o(i.LCD_RD_DATA) for LCD_RD_DATA
+    lcd.o(i.LCD_SSD_BackLightSet) refers to lcd.o(i.LCD_WR_REG) for LCD_WR_REG
+    lcd.o(i.LCD_SSD_BackLightSet) refers to lcd.o(i.LCD_WR_DATA) for LCD_WR_DATA
+    lcd.o(i.LCD_Scan_Dir) refers to lcd.o(i.LCD_WriteReg) for LCD_WriteReg
+    lcd.o(i.LCD_Scan_Dir) refers to lcd.o(i.LCD_WR_REG) for LCD_WR_REG
+    lcd.o(i.LCD_Scan_Dir) refers to lcd.o(i.LCD_WR_DATA) for LCD_WR_DATA
+    lcd.o(i.LCD_Scan_Dir) refers to lcd.o(.bss) for .bss
+    lcd.o(i.LCD_SetCursor) refers to lcd.o(i.LCD_WR_REG) for LCD_WR_REG
+    lcd.o(i.LCD_SetCursor) refers to lcd.o(i.LCD_WR_DATA) for LCD_WR_DATA
+    lcd.o(i.LCD_SetCursor) refers to lcd.o(.bss) for .bss
+    lcd.o(i.LCD_Set_Window) refers to lcd.o(i.LCD_WR_REG) for LCD_WR_REG
+    lcd.o(i.LCD_Set_Window) refers to lcd.o(i.LCD_WR_DATA) for LCD_WR_DATA
+    lcd.o(i.LCD_Set_Window) refers to lcd.o(.bss) for .bss
+    lcd.o(i.LCD_ShowChar) refers to lcd.o(i.LCD_Fast_DrawPoint) for LCD_Fast_DrawPoint
+    lcd.o(i.LCD_ShowChar) refers to lcd.o(.bss) for .bss
+    lcd.o(i.LCD_ShowChar) refers to lcd.o(.constdata) for .constdata
+    lcd.o(i.LCD_ShowChar) refers to lcd.o(.data) for .data
+    lcd.o(i.LCD_ShowNum) refers to lcd.o(i.LCD_Pow) for LCD_Pow
+    lcd.o(i.LCD_ShowNum) refers to lcd.o(i.LCD_ShowChar) for LCD_ShowChar
+    lcd.o(i.LCD_ShowString) refers to lcd.o(i.LCD_ShowChar) for LCD_ShowChar
+    lcd.o(i.LCD_ShowxNum) refers to lcd.o(i.LCD_Pow) for LCD_Pow
+    lcd.o(i.LCD_ShowxNum) refers to lcd.o(i.LCD_ShowChar) for LCD_ShowChar
+    lcd.o(i.LCD_WriteRAM_Prepare) refers to lcd.o(.bss) for .bss
+    lcd.o(i.LTDC_Layer_Parameter_Config) refers to stm32f7xx_hal_ltdc.o(i.HAL_LTDC_ConfigLayer) for HAL_LTDC_ConfigLayer
+    lcd.o(i.LTDC_Layer_Parameter_Config) refers to ltdc.o(.bss) for lcdltdc
     main.o(.rev16_text) refers (Special) to use_no_semi_2.o(.text) for __use_no_semihosting
     main.o(.revsh_text) refers (Special) to use_no_semi_2.o(.text) for __use_no_semihosting
     main.o(.rrx_text) refers (Special) to use_no_semi_2.o(.text) for __use_no_semihosting
@@ -120,92 +206,6 @@ Section Cross References
     stm32f7xx_it.o(i.SysTick_Handler) refers to stm32f7xx_hal.o(i.HAL_IncTick) for HAL_IncTick
     stm32f7xx_it.o(i.USART1_IRQHandler) refers to stm32f7xx_hal_uart.o(i.HAL_UART_IRQHandler) for HAL_UART_IRQHandler
     stm32f7xx_it.o(i.USART1_IRQHandler) refers to usart.o(.bss) for huart1
-    lcd.o(i.LCD_Clear) refers to ltdc.o(i.LTDC_Clear) for LTDC_Clear
-    lcd.o(i.LCD_Clear) refers to lcd.o(i.LCD_SetCursor) for LCD_SetCursor
-    lcd.o(i.LCD_Clear) refers to lcd.o(i.LCD_WriteRAM_Prepare) for LCD_WriteRAM_Prepare
-    lcd.o(i.LCD_Clear) refers to lcd.o(.bss) for .bss
-    lcd.o(i.LCD_Clear) refers to ltdc.o(.bss) for lcdltdc
-    lcd.o(i.LCD_Color_Fill) refers to ltdc.o(i.LTDC_Color_Fill) for LTDC_Color_Fill
-    lcd.o(i.LCD_Color_Fill) refers to lcd.o(i.LCD_SetCursor) for LCD_SetCursor
-    lcd.o(i.LCD_Color_Fill) refers to lcd.o(i.LCD_WriteRAM_Prepare) for LCD_WriteRAM_Prepare
-    lcd.o(i.LCD_Color_Fill) refers to ltdc.o(.bss) for lcdltdc
-    lcd.o(i.LCD_DisplayOff) refers to ltdc.o(i.LTDC_Switch) for LTDC_Switch
-    lcd.o(i.LCD_DisplayOff) refers to lcd.o(i.LCD_WR_REG) for LCD_WR_REG
-    lcd.o(i.LCD_DisplayOff) refers to ltdc.o(.bss) for lcdltdc
-    lcd.o(i.LCD_DisplayOff) refers to lcd.o(.bss) for .bss
-    lcd.o(i.LCD_DisplayOn) refers to ltdc.o(i.LTDC_Switch) for LTDC_Switch
-    lcd.o(i.LCD_DisplayOn) refers to lcd.o(i.LCD_WR_REG) for LCD_WR_REG
-    lcd.o(i.LCD_DisplayOn) refers to ltdc.o(.bss) for lcdltdc
-    lcd.o(i.LCD_DisplayOn) refers to lcd.o(.bss) for .bss
-    lcd.o(i.LCD_Display_Dir) refers to ltdc.o(i.LTDC_Display_Dir) for LTDC_Display_Dir
-    lcd.o(i.LCD_Display_Dir) refers to lcd.o(i.LCD_Scan_Dir) for LCD_Scan_Dir
-    lcd.o(i.LCD_Display_Dir) refers to lcd.o(.bss) for .bss
-    lcd.o(i.LCD_Display_Dir) refers to ltdc.o(.bss) for lcdltdc
-    lcd.o(i.LCD_DrawLine) refers to lcd.o(i.LCD_DrawPoint) for LCD_DrawPoint
-    lcd.o(i.LCD_DrawPoint) refers to ltdc.o(i.LTDC_Draw_Point) for LTDC_Draw_Point
-    lcd.o(i.LCD_DrawPoint) refers to lcd.o(i.LCD_SetCursor) for LCD_SetCursor
-    lcd.o(i.LCD_DrawPoint) refers to lcd.o(i.LCD_WriteRAM_Prepare) for LCD_WriteRAM_Prepare
-    lcd.o(i.LCD_DrawPoint) refers to ltdc.o(.bss) for lcdltdc
-    lcd.o(i.LCD_DrawPoint) refers to lcd.o(.data) for .data
-    lcd.o(i.LCD_DrawRectangle) refers to lcd.o(i.LCD_DrawLine) for LCD_DrawLine
-    lcd.o(i.LCD_Draw_Circle) refers to lcd.o(i.LCD_DrawPoint) for LCD_DrawPoint
-    lcd.o(i.LCD_Fast_DrawPoint) refers to ltdc.o(i.LTDC_Draw_Point) for LTDC_Draw_Point
-    lcd.o(i.LCD_Fast_DrawPoint) refers to lcd.o(i.LCD_WR_REG) for LCD_WR_REG
-    lcd.o(i.LCD_Fast_DrawPoint) refers to lcd.o(i.LCD_WR_DATA) for LCD_WR_DATA
-    lcd.o(i.LCD_Fast_DrawPoint) refers to ltdc.o(.bss) for lcdltdc
-    lcd.o(i.LCD_Fast_DrawPoint) refers to lcd.o(.bss) for .bss
-    lcd.o(i.LCD_Fill) refers to ltdc.o(i.LTDC_Fill) for LTDC_Fill
-    lcd.o(i.LCD_Fill) refers to lcd.o(i.LCD_SetCursor) for LCD_SetCursor
-    lcd.o(i.LCD_Fill) refers to lcd.o(i.LCD_WriteRAM_Prepare) for LCD_WriteRAM_Prepare
-    lcd.o(i.LCD_Fill) refers to ltdc.o(.bss) for lcdltdc
-    lcd.o(i.LCD_Init) refers to stm32f7xx_hal_ltdc.o(i.HAL_LTDC_Init) for HAL_LTDC_Init
-    lcd.o(i.LCD_Init) refers to lcd.o(i.LTDC_Layer_Parameter_Config) for LTDC_Layer_Parameter_Config
-    lcd.o(i.LCD_Init) refers to stm32f7xx_hal_ltdc.o(i.HAL_LTDC_SetWindowPosition) for HAL_LTDC_SetWindowPosition
-    lcd.o(i.LCD_Init) refers to stm32f7xx_hal_ltdc.o(i.HAL_LTDC_SetWindowSize) for HAL_LTDC_SetWindowSize
-    lcd.o(i.LCD_Init) refers to lcd.o(i.LCD_Display_Dir) for LCD_Display_Dir
-    lcd.o(i.LCD_Init) refers to ltdc.o(i.LTDC_Select_Layer) for LTDC_Select_Layer
-    lcd.o(i.LCD_Init) refers to stm32f7xx_hal_gpio.o(i.HAL_GPIO_WritePin) for HAL_GPIO_WritePin
-    lcd.o(i.LCD_Init) refers to lcd.o(i.LCD_Clear) for LCD_Clear
-    lcd.o(i.LCD_Init) refers to ltdc.o(.bss) for lcdltdc
-    lcd.o(i.LCD_Init) refers to lcd.o(.bss) for .bss
-    lcd.o(i.LCD_Init) refers to ltdc.o(.data) for ltdc_framebuf
-    lcd.o(i.LCD_Init) refers to lcd.o(.ARM.__AT_0xC0000000) for .ARM.__AT_0xC0000000
-    lcd.o(i.LCD_MPU_Config) refers to stm32f7xx_hal_cortex.o(i.HAL_MPU_Disable) for HAL_MPU_Disable
-    lcd.o(i.LCD_MPU_Config) refers to stm32f7xx_hal_cortex.o(i.HAL_MPU_ConfigRegion) for HAL_MPU_ConfigRegion
-    lcd.o(i.LCD_MPU_Config) refers to stm32f7xx_hal_cortex.o(i.HAL_MPU_Enable) for HAL_MPU_Enable
-    lcd.o(i.LCD_ReadPoint) refers to ltdc.o(i.LTDC_Read_Point) for LTDC_Read_Point
-    lcd.o(i.LCD_ReadPoint) refers to lcd.o(i.LCD_SetCursor) for LCD_SetCursor
-    lcd.o(i.LCD_ReadPoint) refers to lcd.o(i.LCD_WR_REG) for LCD_WR_REG
-    lcd.o(i.LCD_ReadPoint) refers to lcd.o(i.LCD_RD_DATA) for LCD_RD_DATA
-    lcd.o(i.LCD_ReadPoint) refers to lcd.o(.bss) for .bss
-    lcd.o(i.LCD_ReadPoint) refers to ltdc.o(.bss) for lcdltdc
-    lcd.o(i.LCD_ReadReg) refers to lcd.o(i.LCD_WR_REG) for LCD_WR_REG
-    lcd.o(i.LCD_ReadReg) refers to stm32f7xx_hal.o(i.HAL_Delay) for HAL_Delay
-    lcd.o(i.LCD_ReadReg) refers to lcd.o(i.LCD_RD_DATA) for LCD_RD_DATA
-    lcd.o(i.LCD_SSD_BackLightSet) refers to lcd.o(i.LCD_WR_REG) for LCD_WR_REG
-    lcd.o(i.LCD_SSD_BackLightSet) refers to lcd.o(i.LCD_WR_DATA) for LCD_WR_DATA
-    lcd.o(i.LCD_Scan_Dir) refers to lcd.o(i.LCD_WriteReg) for LCD_WriteReg
-    lcd.o(i.LCD_Scan_Dir) refers to lcd.o(i.LCD_WR_REG) for LCD_WR_REG
-    lcd.o(i.LCD_Scan_Dir) refers to lcd.o(i.LCD_WR_DATA) for LCD_WR_DATA
-    lcd.o(i.LCD_Scan_Dir) refers to lcd.o(.bss) for .bss
-    lcd.o(i.LCD_SetCursor) refers to lcd.o(i.LCD_WR_REG) for LCD_WR_REG
-    lcd.o(i.LCD_SetCursor) refers to lcd.o(i.LCD_WR_DATA) for LCD_WR_DATA
-    lcd.o(i.LCD_SetCursor) refers to lcd.o(.bss) for .bss
-    lcd.o(i.LCD_Set_Window) refers to lcd.o(i.LCD_WR_REG) for LCD_WR_REG
-    lcd.o(i.LCD_Set_Window) refers to lcd.o(i.LCD_WR_DATA) for LCD_WR_DATA
-    lcd.o(i.LCD_Set_Window) refers to lcd.o(.bss) for .bss
-    lcd.o(i.LCD_ShowChar) refers to lcd.o(i.LCD_Fast_DrawPoint) for LCD_Fast_DrawPoint
-    lcd.o(i.LCD_ShowChar) refers to lcd.o(.bss) for .bss
-    lcd.o(i.LCD_ShowChar) refers to lcd.o(.constdata) for .constdata
-    lcd.o(i.LCD_ShowChar) refers to lcd.o(.data) for .data
-    lcd.o(i.LCD_ShowNum) refers to lcd.o(i.LCD_Pow) for LCD_Pow
-    lcd.o(i.LCD_ShowNum) refers to lcd.o(i.LCD_ShowChar) for LCD_ShowChar
-    lcd.o(i.LCD_ShowString) refers to lcd.o(i.LCD_ShowChar) for LCD_ShowChar
-    lcd.o(i.LCD_ShowxNum) refers to lcd.o(i.LCD_Pow) for LCD_Pow
-    lcd.o(i.LCD_ShowxNum) refers to lcd.o(i.LCD_ShowChar) for LCD_ShowChar
-    lcd.o(i.LCD_WriteRAM_Prepare) refers to lcd.o(.bss) for .bss
-    lcd.o(i.LTDC_Layer_Parameter_Config) refers to stm32f7xx_hal_ltdc.o(i.HAL_LTDC_ConfigLayer) for HAL_LTDC_ConfigLayer
-    lcd.o(i.LTDC_Layer_Parameter_Config) refers to ltdc.o(.bss) for lcdltdc
     stm32f7xx_hal_cortex.o(i.HAL_NVIC_SetPriority) refers to stm32f7xx_hal_cortex.o(i.__NVIC_SetPriority) for __NVIC_SetPriority
     stm32f7xx_hal_cortex.o(i.HAL_SYSTICK_Config) refers to stm32f7xx_hal_cortex.o(i.__NVIC_SetPriority) for __NVIC_SetPriority
     stm32f7xx_hal_cortex.o(i.HAL_SYSTICK_IRQHandler) refers to stm32f7xx_hal_cortex.o(i.HAL_SYSTICK_Callback) for HAL_SYSTICK_Callback
@@ -813,6 +813,29 @@ Section Cross References
 
 Removing Unused input sections from the image.
 
+    Removing lcd.o(.rev16_text), (4 bytes).
+    Removing lcd.o(.revsh_text), (4 bytes).
+    Removing lcd.o(.rrx_text), (6 bytes).
+    Removing lcd.o(i.LCD_BGR2RGB), (18 bytes).
+    Removing lcd.o(i.LCD_Color_Fill), (112 bytes).
+    Removing lcd.o(i.LCD_DisplayOff), (72 bytes).
+    Removing lcd.o(i.LCD_DisplayOn), (72 bytes).
+    Removing lcd.o(i.LCD_DrawLine), (152 bytes).
+    Removing lcd.o(i.LCD_DrawPoint), (48 bytes).
+    Removing lcd.o(i.LCD_DrawRectangle), (58 bytes).
+    Removing lcd.o(i.LCD_Draw_Circle), (176 bytes).
+    Removing lcd.o(i.LCD_Fill), (96 bytes).
+    Removing lcd.o(i.LCD_MPU_Config), (74 bytes).
+    Removing lcd.o(i.LCD_Pow), (16 bytes).
+    Removing lcd.o(i.LCD_RD_DATA), (20 bytes).
+    Removing lcd.o(i.LCD_ReadPoint), (156 bytes).
+    Removing lcd.o(i.LCD_ReadReg), (20 bytes).
+    Removing lcd.o(i.LCD_SSD_BackLightSet), (84 bytes).
+    Removing lcd.o(i.LCD_Set_Window), (392 bytes).
+    Removing lcd.o(i.LCD_ShowNum), (120 bytes).
+    Removing lcd.o(i.LCD_ShowxNum), (134 bytes).
+    Removing lcd.o(i.LCD_WriteRAM), (12 bytes).
+    Removing lcd.o(i.opt_delay), (8 bytes).
     Removing main.o(.rev16_text), (4 bytes).
     Removing main.o(.revsh_text), (4 bytes).
     Removing main.o(.rrx_text), (6 bytes).
@@ -848,29 +871,6 @@ Removing Unused input sections from the image.
     Removing stm32f7xx_hal_msp.o(.rev16_text), (4 bytes).
     Removing stm32f7xx_hal_msp.o(.revsh_text), (4 bytes).
     Removing stm32f7xx_hal_msp.o(.rrx_text), (6 bytes).
-    Removing lcd.o(.rev16_text), (4 bytes).
-    Removing lcd.o(.revsh_text), (4 bytes).
-    Removing lcd.o(.rrx_text), (6 bytes).
-    Removing lcd.o(i.LCD_BGR2RGB), (18 bytes).
-    Removing lcd.o(i.LCD_Color_Fill), (112 bytes).
-    Removing lcd.o(i.LCD_DisplayOff), (72 bytes).
-    Removing lcd.o(i.LCD_DisplayOn), (72 bytes).
-    Removing lcd.o(i.LCD_DrawLine), (152 bytes).
-    Removing lcd.o(i.LCD_DrawPoint), (48 bytes).
-    Removing lcd.o(i.LCD_DrawRectangle), (58 bytes).
-    Removing lcd.o(i.LCD_Draw_Circle), (176 bytes).
-    Removing lcd.o(i.LCD_Fill), (96 bytes).
-    Removing lcd.o(i.LCD_MPU_Config), (74 bytes).
-    Removing lcd.o(i.LCD_Pow), (16 bytes).
-    Removing lcd.o(i.LCD_RD_DATA), (20 bytes).
-    Removing lcd.o(i.LCD_ReadPoint), (156 bytes).
-    Removing lcd.o(i.LCD_ReadReg), (20 bytes).
-    Removing lcd.o(i.LCD_SSD_BackLightSet), (84 bytes).
-    Removing lcd.o(i.LCD_Set_Window), (392 bytes).
-    Removing lcd.o(i.LCD_ShowNum), (120 bytes).
-    Removing lcd.o(i.LCD_ShowxNum), (134 bytes).
-    Removing lcd.o(i.LCD_WriteRAM), (12 bytes).
-    Removing lcd.o(i.opt_delay), (8 bytes).
     Removing stm32f7xx_hal_cortex.o(.rev16_text), (4 bytes).
     Removing stm32f7xx_hal_cortex.o(.revsh_text), (4 bytes).
     Removing stm32f7xx_hal_cortex.o(.rrx_text), (6 bytes).
@@ -1385,63 +1385,63 @@ Image Symbol Table
     ../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.c 0x00000000   Number         0  stm32f7xx_hal_uart.o ABSOLUTE
     ../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.c 0x00000000   Number         0  stm32f7xx_hal_uart_ex.o ABSOLUTE
     ../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_fmc.c 0x00000000   Number         0  stm32f7xx_ll_fmc.o ABSOLUTE
-    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit2.o ABSOLUTE
-    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit3.o ABSOLUTE
-    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardshut.o ABSOLUTE
     ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit1.o ABSOLUTE
-    ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_zi.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit3.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit2.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardshut.o ABSOLUTE
     ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_copy.o ABSOLUTE
-    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry2.o ABSOLUTE
-    ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit2.o ABSOLUTE
-    ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit.o ABSOLUTE
+    ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_zi.o ABSOLUTE
     ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry.o ABSOLUTE
     ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry4.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry2.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit2.o ABSOLUTE
     ../clib/angel/rt.s                       0x00000000   Number         0  aeabi_ldiv0.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  aeabi_ldiv0_sigfpe.o ABSOLUTE
     ../clib/angel/rt.s                       0x00000000   Number         0  rt_raise.o ABSOLUTE
     ../clib/angel/rt.s                       0x00000000   Number         0  rt_div0.o ABSOLUTE
-    ../clib/angel/rt.s                       0x00000000   Number         0  aeabi_ldiv0_sigfpe.o ABSOLUTE
     ../clib/angel/scatter.s                  0x00000000   Number         0  __scatter.o ABSOLUTE
     ../clib/angel/startup.s                  0x00000000   Number         0  __main.o ABSOLUTE
-    ../clib/angel/sys.s                      0x00000000   Number         0  libspace.o ABSOLUTE
-    ../clib/angel/sys.s                      0x00000000   Number         0  use_no_semi_2.o ABSOLUTE
-    ../clib/angel/sys.s                      0x00000000   Number         0  sys_stackheap_outer.o ABSOLUTE
     ../clib/angel/sys.s                      0x00000000   Number         0  indicate_semi.o ABSOLUTE
     ../clib/angel/sys.s                      0x00000000   Number         0  use_no_semi.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  libspace.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  sys_stackheap_outer.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  use_no_semi_2.o ABSOLUTE
     ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_command.o ABSOLUTE
-    ../clib/armsys.c                         0x00000000   Number         0  argv_veneer.o ABSOLUTE
     ../clib/armsys.c                         0x00000000   Number         0  no_argv.o ABSOLUTE
     ../clib/armsys.c                         0x00000000   Number         0  _get_argv_nomalloc.o ABSOLUTE
     ../clib/armsys.c                         0x00000000   Number         0  argv_veneer.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  argv_veneer.o ABSOLUTE
     ../clib/heapalloc.c                      0x00000000   Number         0  hrguard.o ABSOLUTE
     ../clib/heapaux.c                        0x00000000   Number         0  heapauxi.o ABSOLUTE
-    ../clib/libinit.s                        0x00000000   Number         0  libinit.o ABSOLUTE
-    ../clib/libinit.s                        0x00000000   Number         0  libshutdown2.o ABSOLUTE
-    ../clib/libinit.s                        0x00000000   Number         0  libinit2.o ABSOLUTE
     ../clib/libinit.s                        0x00000000   Number         0  libshutdown.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libshutdown2.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libinit.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libinit2.o ABSOLUTE
     ../clib/longlong.s                       0x00000000   Number         0  lludivv7m.o ABSOLUTE
-    ../clib/memcpset.s                       0x00000000   Number         0  rt_memclr_w.o ABSOLUTE
     ../clib/memcpset.s                       0x00000000   Number         0  rt_memcpy_w.o ABSOLUTE
-    ../clib/printf.c                         0x00000000   Number         0  noretval__2printf.o ABSOLUTE
-    ../clib/printf.c                         0x00000000   Number         0  _printf_char_file.o ABSOLUTE
+    ../clib/memcpset.s                       0x00000000   Number         0  rt_memclr_w.o ABSOLUTE
     ../clib/printf.c                         0x00000000   Number         0  __printf_nopercent.o ABSOLUTE
     ../clib/printf.c                         0x00000000   Number         0  _printf_char_common.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  noretval__2printf.o ABSOLUTE
     ../clib/printf.c                         0x00000000   Number         0  __2printf.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_segv_inner.o ABSOLUTE
+    ../clib/printf.c                         0x00000000   Number         0  _printf_char_file.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_exit.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_inner.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_cppl_inner.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_stak_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_abrt_inner.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_rtred_inner.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_inner.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_formal.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_outer.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_abrt_inner.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_inner.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_exit.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_other.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_general.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_pvfn_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_formal.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_stak_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_segv_inner.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_formal.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_outer.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_other.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  __raise.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_pvfn_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_general.o ABSOLUTE
     ../clib/signal.s                         0x00000000   Number         0  defsig.o ABSOLUTE
     ../clib/stdio.c                          0x00000000   Number         0  ferror_locked.o ABSOLUTE
     ../clib/stdio.c                          0x00000000   Number         0  ferror.o ABSOLUTE
@@ -1654,21 +1654,21 @@ Image Symbol Table
     .constdata                               0x08003526   Section    18240  lcd.o(.constdata)
     .constdata                               0x08007c66   Section       16  system_stm32f7xx.o(.constdata)
     .constdata                               0x08007c76   Section        8  system_stm32f7xx.o(.constdata)
-    .data                                    0x20000000   Section        4  main.o(.data)
-    i                                        0x20000000   Data           4  main.o(.data)
-    .data                                    0x20000004   Section        4  main.o(.data)
-    .data                                    0x20000008   Section        8  fmc.o(.data)
-    FMC_Initialized                          0x20000008   Data           4  fmc.o(.data)
-    FMC_DeInitialized                        0x2000000c   Data           4  fmc.o(.data)
-    .data                                    0x20000010   Section        8  ltdc.o(.data)
-    .data                                    0x20000018   Section        8  lcd.o(.data)
+    .data                                    0x20000000   Section        8  lcd.o(.data)
+    .data                                    0x20000008   Section        4  main.o(.data)
+    i                                        0x20000008   Data           4  main.o(.data)
+    .data                                    0x2000000c   Section        4  main.o(.data)
+    .data                                    0x20000010   Section        8  fmc.o(.data)
+    FMC_Initialized                          0x20000010   Data           4  fmc.o(.data)
+    FMC_DeInitialized                        0x20000014   Data           4  fmc.o(.data)
+    .data                                    0x20000018   Section        8  ltdc.o(.data)
     .data                                    0x20000020   Section       12  stm32f7xx_hal.o(.data)
     .data                                    0x2000002c   Section        4  system_stm32f7xx.o(.data)
-    .bss                                     0x20000030   Section       88  dma2d.o(.bss)
-    .bss                                     0x20000088   Section       52  fmc.o(.bss)
-    .bss                                     0x200000bc   Section      368  ltdc.o(.bss)
-    .bss                                     0x2000022c   Section      132  usart.o(.bss)
-    .bss                                     0x200002b0   Section       14  lcd.o(.bss)
+    .bss                                     0x20000030   Section       14  lcd.o(.bss)
+    .bss                                     0x20000040   Section       88  dma2d.o(.bss)
+    .bss                                     0x20000098   Section       52  fmc.o(.bss)
+    .bss                                     0x200000cc   Section      368  ltdc.o(.bss)
+    .bss                                     0x2000023c   Section      132  usart.o(.bss)
     .bss                                     0x200002c0   Section       96  libspace.o(.bss)
     HEAP                                     0x20000320   Section      512  startup_stm32f767xx.o(HEAP)
     Heap_Mem                                 0x20000320   Data         512  startup_stm32f767xx.o(HEAP)
@@ -2002,21 +2002,21 @@ Image Symbol Table
     APBPrescTable                            0x08007c76   Data           8  system_stm32f7xx.o(.constdata)
     Region$$Table$$Base                      0x08007c80   Number         0  anon$$obj.o(Region$$Table)
     Region$$Table$$Limit                     0x08007ca0   Number         0  anon$$obj.o(Region$$Table)
-    __stdout                                 0x20000004   Data           4  main.o(.data)
-    ltdc_framebuf                            0x20000010   Data           8  ltdc.o(.data)
-    POINT_COLOR                              0x20000018   Data           4  lcd.o(.data)
-    BACK_COLOR                               0x2000001c   Data           4  lcd.o(.data)
+    POINT_COLOR                              0x20000000   Data           4  lcd.o(.data)
+    BACK_COLOR                               0x20000004   Data           4  lcd.o(.data)
+    __stdout                                 0x2000000c   Data           4  main.o(.data)
+    ltdc_framebuf                            0x20000018   Data           8  ltdc.o(.data)
     uwTickFreq                               0x20000020   Data           1  stm32f7xx_hal.o(.data)
     uwTickPrio                               0x20000024   Data           4  stm32f7xx_hal.o(.data)
     uwTick                                   0x20000028   Data           4  stm32f7xx_hal.o(.data)
     SystemCoreClock                          0x2000002c   Data           4  system_stm32f7xx.o(.data)
-    hdma2d                                   0x20000030   Data          88  dma2d.o(.bss)
-    hsdram1                                  0x20000088   Data          52  fmc.o(.bss)
-    LTDC_Handler                             0x200000bc   Data         168  ltdc.o(.bss)
-    lcdltdc                                  0x20000164   Data          32  ltdc.o(.bss)
-    hltdc                                    0x20000184   Data         168  ltdc.o(.bss)
-    huart1                                   0x2000022c   Data         132  usart.o(.bss)
-    lcddev                                   0x200002b0   Data          14  lcd.o(.bss)
+    lcddev                                   0x20000030   Data          14  lcd.o(.bss)
+    hdma2d                                   0x20000040   Data          88  dma2d.o(.bss)
+    hsdram1                                  0x20000098   Data          52  fmc.o(.bss)
+    LTDC_Handler                             0x200000cc   Data         168  ltdc.o(.bss)
+    lcdltdc                                  0x20000174   Data          32  ltdc.o(.bss)
+    hltdc                                    0x20000194   Data         168  ltdc.o(.bss)
+    huart1                                   0x2000023c   Data         132  usart.o(.bss)
     __libspace_start                         0x200002c0   Data          96  libspace.o(.bss)
     __temporary_stack_top$libspace           0x20000320   Data           0  libspace.o(.bss)
     ltdc_lcd_framebuf                        0xc0000000   Data       2048000  lcd.o(.ARM.__AT_0xC0000000)
@@ -2099,9 +2099,9 @@ Memory Map of the image
     0x08000542   0x00000028   Code   RO         3945    .text               c_w.l(__printf_nopercent.o)
     0x0800056a   0x00000012   Code   RO         3947    .text               c_w.l(exit.o)
     0x0800057c   0x00000008   Code   RO         3959    .text               c_w.l(libspace.o)
-    0x08000584   0x00000002   Code   RO          501    i.BusFault_Handler  stm32f7xx_it.o
-    0x08000586   0x00000002   Code   RO          502    i.DebugMon_Handler  stm32f7xx_it.o
-    0x08000588   0x00000004   Code   RO           13    i.Error_Handler     main.o
+    0x08000584   0x00000002   Code   RO          723    i.BusFault_Handler  stm32f7xx_it.o
+    0x08000586   0x00000002   Code   RO          724    i.DebugMon_Handler  stm32f7xx_it.o
+    0x08000588   0x00000004   Code   RO          355    i.Error_Handler     main.o
     0x0800058c   0x0000006a   Code   RO         2747    i.FMC_SDRAM_Init    stm32f7xx_ll_fmc.o
     0x080005f6   0x00000012   Code   RO         2748    i.FMC_SDRAM_ProgramRefreshRate  stm32f7xx_ll_fmc.o
     0x08000608   0x00000026   Code   RO         2749    i.FMC_SDRAM_SendCommand  stm32f7xx_ll_fmc.o
@@ -2109,12 +2109,12 @@ Memory Map of the image
     0x08000630   0x000000b0   Code   RO         2751    i.FMC_SDRAM_Timing_Init  stm32f7xx_ll_fmc.o
     0x080006e0   0x000000b8   Code   RO          978    i.HAL_DMA2D_ConfigLayer  stm32f7xx_hal_dma2d.o
     0x08000798   0x00000070   Code   RO          986    i.HAL_DMA2D_Init    stm32f7xx_hal_dma2d.o
-    0x08000808   0x00000028   Code   RO          244    i.HAL_DMA2D_MspInit  dma2d.o
+    0x08000808   0x00000028   Code   RO          466    i.HAL_DMA2D_MspInit  dma2d.o
     0x08000830   0x00000092   Code   RO         1586    i.HAL_DMA_Abort     stm32f7xx_hal_dma.o
     0x080008c2   0x00000024   Code   RO         1587    i.HAL_DMA_Abort_IT  stm32f7xx_hal_dma.o
     0x080008e6   0x00000002   PAD
     0x080008e8   0x00000024   Code   RO         1953    i.HAL_Delay         stm32f7xx_hal.o
-    0x0800090c   0x000000b0   Code   RO          287    i.HAL_FMC_MspInit   fmc.o
+    0x0800090c   0x000000b0   Code   RO          509    i.HAL_FMC_MspInit   fmc.o
     0x080009bc   0x00000248   Code   RO         1520    i.HAL_GPIO_Init     stm32f7xx_hal_gpio.o
     0x08000c04   0x00000010   Code   RO         1523    i.HAL_GPIO_TogglePin  stm32f7xx_hal_gpio.o
     0x08000c14   0x0000000a   Code   RO         1524    i.HAL_GPIO_WritePin  stm32f7xx_hal_gpio.o
@@ -2127,10 +2127,10 @@ Memory Map of the image
     0x08000c94   0x00000052   Code   RO         3056    i.HAL_LTDC_ConfigLayer  stm32f7xx_hal_ltdc.o
     0x08000ce6   0x00000002   PAD
     0x08000ce8   0x000000f8   Code   RO         3073    i.HAL_LTDC_Init     stm32f7xx_hal_ltdc.o
-    0x08000de0   0x0000010c   Code   RO          359    i.HAL_LTDC_MspInit  ltdc.o
+    0x08000de0   0x0000010c   Code   RO          581    i.HAL_LTDC_MspInit  ltdc.o
     0x08000eec   0x00000054   Code   RO         3088    i.HAL_LTDC_SetWindowPosition  stm32f7xx_hal_ltdc.o
     0x08000f40   0x00000054   Code   RO         3090    i.HAL_LTDC_SetWindowSize  stm32f7xx_hal_ltdc.o
-    0x08000f94   0x00000030   Code   RO          583    i.HAL_MspInit       stm32f7xx_hal_msp.o
+    0x08000f94   0x00000030   Code   RO          805    i.HAL_MspInit       stm32f7xx_hal_msp.o
     0x08000fc4   0x0000001a   Code   RO          834    i.HAL_NVIC_EnableIRQ  stm32f7xx_hal_cortex.o
     0x08000fde   0x00000002   PAD
     0x08000fe0   0x00000040   Code   RO          840    i.HAL_NVIC_SetPriority  stm32f7xx_hal_cortex.o
@@ -2144,7 +2144,7 @@ Memory Map of the image
     0x0800176c   0x00000064   Code   RO         1183    i.HAL_RCC_GetSysClockFreq  stm32f7xx_hal_rcc.o
     0x080017d0   0x00000398   Code   RO         1186    i.HAL_RCC_OscConfig  stm32f7xx_hal_rcc.o
     0x08001b68   0x00000042   Code   RO         2888    i.HAL_SDRAM_Init    stm32f7xx_hal_sdram.o
-    0x08001baa   0x00000004   Code   RO          289    i.HAL_SDRAM_MspInit  fmc.o
+    0x08001baa   0x00000004   Code   RO          511    i.HAL_SDRAM_MspInit  fmc.o
     0x08001bae   0x0000002e   Code   RO         2891    i.HAL_SDRAM_ProgramRefreshRate  stm32f7xx_hal_sdram.o
     0x08001bdc   0x0000003c   Code   RO         2897    i.HAL_SDRAM_SendCommand  stm32f7xx_hal_sdram.o
     0x08001c18   0x00000026   Code   RO          845    i.HAL_SYSTICK_Config  stm32f7xx_hal_cortex.o
@@ -2154,44 +2154,44 @@ Memory Map of the image
     0x08001c44   0x00000294   Code   RO         3411    i.HAL_UART_IRQHandler  stm32f7xx_hal_uart.o
     0x08001ed8   0x00000066   Code   RO         3412    i.HAL_UART_Init     stm32f7xx_hal_uart.o
     0x08001f3e   0x00000002   PAD
-    0x08001f40   0x00000094   Code   RO          460    i.HAL_UART_MspInit  usart.o
+    0x08001f40   0x00000094   Code   RO          682    i.HAL_UART_MspInit  usart.o
     0x08001fd4   0x00000002   Code   RO         3424    i.HAL_UART_TxCpltCallback  stm32f7xx_hal_uart.o
-    0x08001fd6   0x00000002   Code   RO          503    i.HardFault_Handler  stm32f7xx_it.o
-    0x08001fd8   0x00000048   Code   RO          608    i.LCD_Clear         lcd.o
-    0x08002020   0x000000f4   Code   RO          612    i.LCD_Display_Dir   lcd.o
-    0x08002114   0x000000f4   Code   RO          617    i.LCD_Fast_DrawPoint  lcd.o
-    0x08002208   0x00000110   Code   RO          619    i.LCD_Init          lcd.o
-    0x08002318   0x000001b8   Code   RO          626    i.LCD_Scan_Dir      lcd.o
-    0x080024d0   0x00000104   Code   RO          627    i.LCD_SetCursor     lcd.o
-    0x080025d4   0x000000e4   Code   RO          629    i.LCD_ShowChar      lcd.o
-    0x080026b8   0x00000054   Code   RO          631    i.LCD_ShowString    lcd.o
-    0x0800270c   0x00000018   Code   RO          633    i.LCD_WR_DATA       lcd.o
-    0x08002724   0x00000018   Code   RO          634    i.LCD_WR_REG        lcd.o
-    0x0800273c   0x00000014   Code   RO          636    i.LCD_WriteRAM_Prepare  lcd.o
-    0x08002750   0x00000010   Code   RO          637    i.LCD_WriteReg      lcd.o
-    0x08002760   0x00000020   Code   RO          360    i.LTDC_Clear        ltdc.o
-    0x08002780   0x00000024   Code   RO          362    i.LTDC_Display_Dir  ltdc.o
-    0x080027a4   0x0000003c   Code   RO          363    i.LTDC_Draw_Point   ltdc.o
-    0x080027e0   0x000000b4   Code   RO          364    i.LTDC_Fill         ltdc.o
-    0x08002894   0x00000060   Code   RO          638    i.LTDC_Layer_Parameter_Config  lcd.o
-    0x080028f4   0x0000000c   Code   RO          367    i.LTDC_Select_Layer  ltdc.o
+    0x08001fd6   0x00000002   Code   RO          725    i.HardFault_Handler  stm32f7xx_it.o
+    0x08001fd8   0x00000048   Code   RO           14    i.LCD_Clear         lcd.o
+    0x08002020   0x000000f4   Code   RO           18    i.LCD_Display_Dir   lcd.o
+    0x08002114   0x000000f4   Code   RO           23    i.LCD_Fast_DrawPoint  lcd.o
+    0x08002208   0x00000110   Code   RO           25    i.LCD_Init          lcd.o
+    0x08002318   0x000001b8   Code   RO           32    i.LCD_Scan_Dir      lcd.o
+    0x080024d0   0x00000104   Code   RO           33    i.LCD_SetCursor     lcd.o
+    0x080025d4   0x000000e4   Code   RO           35    i.LCD_ShowChar      lcd.o
+    0x080026b8   0x00000054   Code   RO           37    i.LCD_ShowString    lcd.o
+    0x0800270c   0x00000018   Code   RO           39    i.LCD_WR_DATA       lcd.o
+    0x08002724   0x00000018   Code   RO           40    i.LCD_WR_REG        lcd.o
+    0x0800273c   0x00000014   Code   RO           42    i.LCD_WriteRAM_Prepare  lcd.o
+    0x08002750   0x00000010   Code   RO           43    i.LCD_WriteReg      lcd.o
+    0x08002760   0x00000020   Code   RO          582    i.LTDC_Clear        ltdc.o
+    0x08002780   0x00000024   Code   RO          584    i.LTDC_Display_Dir  ltdc.o
+    0x080027a4   0x0000003c   Code   RO          585    i.LTDC_Draw_Point   ltdc.o
+    0x080027e0   0x000000b4   Code   RO          586    i.LTDC_Fill         ltdc.o
+    0x08002894   0x00000060   Code   RO           44    i.LTDC_Layer_Parameter_Config  lcd.o
+    0x080028f4   0x0000000c   Code   RO          589    i.LTDC_Select_Layer  ltdc.o
     0x08002900   0x000001d0   Code   RO         3092    i.LTDC_SetConfig    stm32f7xx_hal_ltdc.o
-    0x08002ad0   0x0000013c   Code   RO           14    i.LTDC_Test         main.o
-    0x08002c0c   0x00000048   Code   RO          245    i.MX_DMA2D_Init     dma2d.o
-    0x08002c54   0x0000006c   Code   RO          290    i.MX_FMC_Init       fmc.o
-    0x08002cc0   0x000000d8   Code   RO          219    i.MX_GPIO_Init      gpio.o
-    0x08002d98   0x000000ec   Code   RO          369    i.MX_LTDC_Init      ltdc.o
-    0x08002e84   0x0000003c   Code   RO          461    i.MX_USART1_UART_Init  usart.o
-    0x08002ec0   0x00000002   Code   RO          504    i.MemManage_Handler  stm32f7xx_it.o
-    0x08002ec2   0x00000002   Code   RO          505    i.NMI_Handler       stm32f7xx_it.o
-    0x08002ec4   0x00000002   Code   RO          506    i.PendSV_Handler    stm32f7xx_it.o
+    0x08002ad0   0x0000013c   Code   RO          356    i.LTDC_Test         main.o
+    0x08002c0c   0x00000048   Code   RO          467    i.MX_DMA2D_Init     dma2d.o
+    0x08002c54   0x0000006c   Code   RO          512    i.MX_FMC_Init       fmc.o
+    0x08002cc0   0x000000d8   Code   RO          441    i.MX_GPIO_Init      gpio.o
+    0x08002d98   0x000000ec   Code   RO          591    i.MX_LTDC_Init      ltdc.o
+    0x08002e84   0x0000003c   Code   RO          683    i.MX_USART1_UART_Init  usart.o
+    0x08002ec0   0x00000002   Code   RO          726    i.MemManage_Handler  stm32f7xx_it.o
+    0x08002ec2   0x00000002   Code   RO          727    i.NMI_Handler       stm32f7xx_it.o
+    0x08002ec4   0x00000002   Code   RO          728    i.PendSV_Handler    stm32f7xx_it.o
     0x08002ec6   0x00000002   PAD
-    0x08002ec8   0x0000004c   Code   RO          291    i.SDRAM_Initialization_Sequence  fmc.o
-    0x08002f14   0x00000038   Code   RO          292    i.SDRAM_Send_Cmd    fmc.o
-    0x08002f4c   0x00000002   Code   RO          507    i.SVC_Handler       stm32f7xx_it.o
-    0x08002f4e   0x00000004   Code   RO          508    i.SysTick_Handler   stm32f7xx_it.o
+    0x08002ec8   0x0000004c   Code   RO          513    i.SDRAM_Initialization_Sequence  fmc.o
+    0x08002f14   0x00000038   Code   RO          514    i.SDRAM_Send_Cmd    fmc.o
+    0x08002f4c   0x00000002   Code   RO          729    i.SVC_Handler       stm32f7xx_it.o
+    0x08002f4e   0x00000004   Code   RO          730    i.SysTick_Handler   stm32f7xx_it.o
     0x08002f52   0x00000002   PAD
-    0x08002f54   0x000000a4   Code   RO           15    i.SystemClock_Config  main.o
+    0x08002f54   0x000000a4   Code   RO          357    i.SystemClock_Config  main.o
     0x08002ff8   0x00000010   Code   RO         3859    i.SystemInit        system_stm32f7xx.o
     0x08003008   0x000000c8   Code   RO         3426    i.UART_AdvFeatureConfig  stm32f7xx_hal_uart.o
     0x080030d0   0x0000005c   Code   RO         3427    i.UART_CheckIdleState  stm32f7xx_hal_uart.o
@@ -2201,15 +2201,15 @@ Memory Map of the image
     0x0800318c   0x00000230   Code   RO         3442    i.UART_SetConfig    stm32f7xx_hal_uart.o
     0x080033bc   0x000000ca   Code   RO         3447    i.UART_WaitOnFlagUntilTimeout  stm32f7xx_hal_uart.o
     0x08003486   0x00000002   PAD
-    0x08003488   0x0000000c   Code   RO          509    i.USART1_IRQHandler  stm32f7xx_it.o
-    0x08003494   0x00000002   Code   RO          510    i.UsageFault_Handler  stm32f7xx_it.o
+    0x08003488   0x0000000c   Code   RO          731    i.USART1_IRQHandler  stm32f7xx_it.o
+    0x08003494   0x00000002   Code   RO          732    i.UsageFault_Handler  stm32f7xx_it.o
     0x08003496   0x00000022   Code   RO          847    i.__NVIC_SetPriority  stm32f7xx_hal_cortex.o
-    0x080034b8   0x00000002   Code   RO           16    i._sys_exit         main.o
+    0x080034b8   0x00000002   Code   RO          358    i._sys_exit         main.o
     0x080034ba   0x00000002   PAD
-    0x080034bc   0x00000014   Code   RO           18    i.fputc             main.o
-    0x080034d0   0x0000004c   Code   RO           19    i.main              main.o
+    0x080034bc   0x00000014   Code   RO          360    i.fputc             main.o
+    0x080034d0   0x0000004c   Code   RO          361    i.main              main.o
     0x0800351c   0x0000000a   Code   RO         4028    x$fpl$fpinit        fz_wv.l(fpinit.o)
-    0x08003526   0x00004740   Data   RO          642    .constdata          lcd.o
+    0x08003526   0x00004740   Data   RO           48    .constdata          lcd.o
     0x08007c66   0x00000010   Data   RO         3860    .constdata          system_stm32f7xx.o
     0x08007c76   0x00000008   Data   RO         3861    .constdata          system_stm32f7xx.o
     0x08007c7e   0x00000002   PAD
@@ -2220,19 +2220,19 @@ Memory Map of the image
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x00000004   Data   RW           20    .data               main.o
-    0x20000004   0x00000004   Data   RW           21    .data               main.o
-    0x20000008   0x00000008   Data   RW          294    .data               fmc.o
-    0x20000010   0x00000008   Data   RW          371    .data               ltdc.o
-    0x20000018   0x00000008   Data   RW          643    .data               lcd.o
+    0x20000000   0x00000008   Data   RW           49    .data               lcd.o
+    0x20000008   0x00000004   Data   RW          362    .data               main.o
+    0x2000000c   0x00000004   Data   RW          363    .data               main.o
+    0x20000010   0x00000008   Data   RW          516    .data               fmc.o
+    0x20000018   0x00000008   Data   RW          593    .data               ltdc.o
     0x20000020   0x0000000c   Data   RW         1977    .data               stm32f7xx_hal.o
     0x2000002c   0x00000004   Data   RW         3862    .data               system_stm32f7xx.o
-    0x20000030   0x00000058   Zero   RW          246    .bss                dma2d.o
-    0x20000088   0x00000034   Zero   RW          293    .bss                fmc.o
-    0x200000bc   0x00000170   Zero   RW          370    .bss                ltdc.o
-    0x2000022c   0x00000084   Zero   RW          462    .bss                usart.o
-    0x200002b0   0x0000000e   Zero   RW          641    .bss                lcd.o
-    0x200002be   0x00000002   PAD
+    0x20000030   0x0000000e   Zero   RW           47    .bss                lcd.o
+    0x2000003e   0x00000002   PAD
+    0x20000040   0x00000058   Zero   RW          468    .bss                dma2d.o
+    0x20000098   0x00000034   Zero   RW          515    .bss                fmc.o
+    0x200000cc   0x00000170   Zero   RW          592    .bss                ltdc.o
+    0x2000023c   0x00000084   Zero   RW          684    .bss                usart.o
     0x200002c0   0x00000060   Zero   RW         3960    .bss                c_w.l(libspace.o)
     0x20000320   0x00000200   Zero   RW            2    HEAP                startup_stm32f767xx.o
     0x20000520   0x00000400   Zero   RW            1    STACK               startup_stm32f767xx.o
@@ -2245,7 +2245,7 @@ Memory Map of the image
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0xc0000000   0x001f4000   Zero   RW          640    .ARM.__AT_0xC0000000  lcd.o
+    0xc0000000   0x001f4000   Zero   RW           46    .ARM.__AT_0xC0000000  lcd.o
 
 
 ==============================================================================
@@ -2258,9 +2258,9 @@ Image component sizes
        112         20          0          0         88       1589   dma2d.o
        420         48          0          8         52       3593   fmc.o
        216         10          0          0          0       1107   gpio.o
-      2024        154      18240          8    2048014      12518   lcd.o
+      2024        154      18240          8    2048014     878119   lcd.o
        824         72          0          8        368       7113   ltdc.o
-       582        124          0          8          0     870887   main.o
+       582        124          0          8          0       5286   main.o
         64         26        504          0       1536        844   startup_stm32f767xx.o
        150         24          0         12          0       9197   stm32f7xx_hal.o
        198         12          0          0          0      38995   stm32f7xx_hal_cortex.o

@@ -42,5 +42,5 @@ test_13\main.o: ../Core/Inc/usart.h
 test_13\main.o: ../Core/Inc/gpio.h
 test_13\main.o: ../Core/Inc/fmc.h
 test_13\main.o: D:\Software\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-test_13\main.o: ..\LCD\lcd.h
+test_13\main.o: ../LCD/lcd.h
 test_13\main.o: D:\Software\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
