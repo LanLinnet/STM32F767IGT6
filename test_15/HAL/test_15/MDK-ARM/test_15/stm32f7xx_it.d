@@ -40,5 +40,5 @@ test_15\stm32f7xx_it.o: ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h
 test_15\stm32f7xx_it.o: ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h
 test_15\stm32f7xx_it.o: ../Core/Inc/stm32f7xx_it.h
 test_15\stm32f7xx_it.o: D:\Software\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-test_15\stm32f7xx_it.o: ..\LCD\lcd.h
+test_15\stm32f7xx_it.o: ../LCD/lcd.h
 test_15\stm32f7xx_it.o: D:\Software\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

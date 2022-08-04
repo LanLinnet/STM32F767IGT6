@@ -1,5 +1,6 @@
 --cpu Cortex-M7.fp.dp
 "test_15\startup_stm32f767xx.o"
+"test_15\lcd.o"
 "test_15\main.o"
 "test_15\gpio.o"
 "test_15\dma2d.o"
@@ -9,7 +10,6 @@
 "test_15\usart.o"
 "test_15\stm32f7xx_it.o"
 "test_15\stm32f7xx_hal_msp.o"
-"test_15\lcd.o"
 "test_15\stm32f7xx_hal_cortex.o"
 "test_15\stm32f7xx_hal_dma2d.o"
 "test_15\stm32f7xx_hal_rcc.o"

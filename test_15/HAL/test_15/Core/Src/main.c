@@ -119,6 +119,10 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_DMA2D_Init();
+  MX_FMC_Init();
+  MX_LTDC_Init();
+  MX_RTC_Init();
+  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
   	MX_FMC_Init();
 	SDRAM_Initialization_Sequence(&hsdram1);//发送SDRAM初始化序列

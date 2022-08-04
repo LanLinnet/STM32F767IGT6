@@ -73,7 +73,7 @@ void MX_RTC_Init(void)
   }
   sDate.WeekDay = RTC_WEEKDAY_SUNDAY;
   sDate.Month = RTC_MONTH_DECEMBER;
-  sDate.Date = 0x29;
+  sDate.Date = 0x27;
   sDate.Year = 0x15;
   if (HAL_RTC_SetDate(&hrtc, &sDate, RTC_FORMAT_BCD) != HAL_OK)
   {
@@ -89,7 +89,7 @@ void MX_RTC_Init(void)
   sAlarm.AlarmTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
   sAlarm.AlarmTime.StoreOperation = RTC_STOREOPERATION_RESET;
   sAlarm.AlarmMask = RTC_ALARMMASK_NONE;
-  sAlarm.AlarmSubSecondMask = RTC_ALARMSUBSECONDMASK_NONE;
+  sAlarm.AlarmSubSecondMask = RTC_ALARMSUBSECONDMASK_ALL;
   sAlarm.AlarmDateWeekDaySel = RTC_ALARMDATEWEEKDAYSEL_WEEKDAY;
   sAlarm.AlarmDateWeekDay = RTC_WEEKDAY_MONDAY;
   sAlarm.Alarm = RTC_ALARM_A;
