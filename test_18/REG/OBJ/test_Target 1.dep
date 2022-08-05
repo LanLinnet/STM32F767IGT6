@@ -132,7 +132,7 @@ I (D:\Software\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x569DEA3A)
 I (..\HARDWARE\LCD\ltdc.h)(0x62E9D73B)
 I (..\SYSTEM\delay\delay.h)(0x57832186)
 I (..\HARDWARE\SDRAM\sdram.h)(0x62DE0765)
-F (..\HARDWARE\ADC\adc.c)(0x62EC8AF3)(-c --cpu Cortex-M7.fp.dp -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\HARDWARE\LED -I ..\SYSTEM\usart -I ..\HARDWARE\MPU -I ..\HARDWARE\LCD -I ..\HARDWARE\SDRAM -I ..\HARDWARE\ADC-I D:\Embeded\Project\test_18\REG\USER\RTE-I D:\Software\Keil_v5\ARM\PACK\Keil\STM32F7xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include-I D:\Software\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="518" -DSTM32F767xx -DSTM32F767xx-o ..\obj\adc.o --omf_browse ..\obj\adc.crf --depend ..\obj\adc.d)
+F (..\HARDWARE\ADC\adc.c)(0x62ECC065)(-c --cpu Cortex-M7.fp.dp -g -O0 --apcs=interwork --split_sections -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\HARDWARE\LED -I ..\SYSTEM\usart -I ..\HARDWARE\MPU -I ..\HARDWARE\LCD -I ..\HARDWARE\SDRAM -I ..\HARDWARE\ADC-I D:\Embeded\Project\test_18\REG\USER\RTE-I D:\Software\Keil_v5\ARM\PACK\Keil\STM32F7xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include-I D:\Software\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="518" -DSTM32F767xx -DSTM32F767xx-o ..\obj\adc.o --omf_browse ..\obj\adc.crf --depend ..\obj\adc.d)
 I (..\HARDWARE\ADC\adc.h)(0x62EC85E0)
 I (..\SYSTEM\sys\sys.h)(0x57E4E552)
 I (..\SYSTEM\sys\stm32f7xx.h)(0x5721C150)

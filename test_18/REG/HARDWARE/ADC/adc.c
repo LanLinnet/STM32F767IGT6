@@ -6,7 +6,7 @@ void Adc_Init(void)
 {
 	//³õÊ¼»¯IO¿Ú
 	RCC->APB2ENR|=1<<8;
-	RCC->APB1ENR|=1<<0;
+	RCC->AHB1ENR|=1<<0;
 	GPIO_Set(GPIOA,PIN5,GPIO_MODE_AIN,0,0,GPIO_PUPD_PU);
 	
 	RCC->APB2RSTR|=1<<8;
