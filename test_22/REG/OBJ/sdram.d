@@ -1,0 +1,13 @@
+..\obj\sdram.o: ..\HARDWARE\SDRAM\sdram.c
+..\obj\sdram.o: ..\HARDWARE\SDRAM\sdram.h
+..\obj\sdram.o: ..\SYSTEM\sys\sys.h
+..\obj\sdram.o: ..\SYSTEM\sys\stm32f7xx.h
+..\obj\sdram.o: ..\SYSTEM\sys\stm32f767xx.h
+..\obj\sdram.o: ..\SYSTEM\sys\core_cm7.h
+..\obj\sdram.o: D:\Software\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\sdram.o: ..\SYSTEM\sys\core_cmInstr.h
+..\obj\sdram.o: ..\SYSTEM\sys\cmsis_armcc.h
+..\obj\sdram.o: ..\SYSTEM\sys\core_cmFunc.h
+..\obj\sdram.o: ..\SYSTEM\sys\core_cmSimd.h
+..\obj\sdram.o: ..\SYSTEM\sys\system_stm32f7xx.h
+..\obj\sdram.o: ..\SYSTEM\delay\delay.h
