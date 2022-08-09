@@ -1,0 +1,12 @@
+..\obj\dac.o: ..\HARDWARE\DAC\dac.c
+..\obj\dac.o: ..\HARDWARE\DAC\dac.h
+..\obj\dac.o: ..\SYSTEM\sys\sys.h
+..\obj\dac.o: ..\SYSTEM\sys\stm32f7xx.h
+..\obj\dac.o: ..\SYSTEM\sys\stm32f767xx.h
+..\obj\dac.o: ..\SYSTEM\sys\core_cm7.h
+..\obj\dac.o: D:\Software\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\dac.o: ..\SYSTEM\sys\core_cmInstr.h
+..\obj\dac.o: ..\SYSTEM\sys\cmsis_armcc.h
+..\obj\dac.o: ..\SYSTEM\sys\core_cmFunc.h
+..\obj\dac.o: ..\SYSTEM\sys\core_cmSimd.h
+..\obj\dac.o: ..\SYSTEM\sys\system_stm32f7xx.h
