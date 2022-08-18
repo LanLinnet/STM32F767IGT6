@@ -1,0 +1,14 @@
+..\obj\w25qxx.o: ..\HARDWARE\W25QXX\w25qxx.c
+..\obj\w25qxx.o: ..\HARDWARE\W25QXX\w25qxx.h
+..\obj\w25qxx.o: ..\SYSTEM\sys\sys.h
+..\obj\w25qxx.o: ..\SYSTEM\sys\stm32f7xx.h
+..\obj\w25qxx.o: ..\SYSTEM\sys\stm32f767xx.h
+..\obj\w25qxx.o: ..\SYSTEM\sys\core_cm7.h
+..\obj\w25qxx.o: D:\Software\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\w25qxx.o: ..\SYSTEM\sys\core_cmInstr.h
+..\obj\w25qxx.o: ..\SYSTEM\sys\cmsis_armcc.h
+..\obj\w25qxx.o: ..\SYSTEM\sys\core_cmFunc.h
+..\obj\w25qxx.o: ..\SYSTEM\sys\core_cmSimd.h
+..\obj\w25qxx.o: ..\SYSTEM\sys\system_stm32f7xx.h
+..\obj\w25qxx.o: ..\HARDWARE\QSPI\qspi.h
+..\obj\w25qxx.o: ..\SYSTEM\delay\delay.h
