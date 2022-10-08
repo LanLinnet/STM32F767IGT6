@@ -34,7 +34,7 @@ int main(void)
 	LCD_ShowString(30,50,200,16,16,(u8 *)"Apollo STM32F4/F7"); 
 	LCD_ShowString(30,70,200,16,16,(u8 *)"RS485 TEST");	
 	LCD_ShowString(30,90,200,16,16,(u8 *)"ATOM@ALIENTEK");
-	LCD_ShowString(30,110,200,16,16,(u8 *)"2022/8/18");
+	LCD_ShowString(30,110,200,16,16,(u8 *)"2022/10/08");
 	LCD_ShowString(30,130,200,16,16,(u8 *)"KEY0:Send");	//显示提示信息
 	
 	POINT_COLOR = BLUE;		//蓝色画笔
