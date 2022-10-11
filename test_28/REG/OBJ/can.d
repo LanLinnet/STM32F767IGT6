@@ -1,0 +1,12 @@
+..\obj\can.o: ..\HARDWARE\CAN\can.c
+..\obj\can.o: ..\HARDWARE\CAN\can.h
+..\obj\can.o: ..\SYSTEM\sys\sys.h
+..\obj\can.o: ..\SYSTEM\sys\stm32f7xx.h
+..\obj\can.o: ..\SYSTEM\sys\stm32f767xx.h
+..\obj\can.o: ..\SYSTEM\sys\core_cm7.h
+..\obj\can.o: D:\Software\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\can.o: ..\SYSTEM\sys\core_cmInstr.h
+..\obj\can.o: ..\SYSTEM\sys\cmsis_armcc.h
+..\obj\can.o: ..\SYSTEM\sys\core_cmFunc.h
+..\obj\can.o: ..\SYSTEM\sys\core_cmSimd.h
+..\obj\can.o: ..\SYSTEM\sys\system_stm32f7xx.h

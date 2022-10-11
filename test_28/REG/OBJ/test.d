@@ -20,4 +20,4 @@
 ..\obj\test.o: ..\HARDWARE\KEY\key.h
 ..\obj\test.o: ..\USMART\usmart.h
 ..\obj\test.o: ..\USMART\usmart_str.h
-..\obj\test.o: ..\HARDWARE\RS485\rs485.h
+..\obj\test.o: ..\HARDWARE\CAN\can.h
